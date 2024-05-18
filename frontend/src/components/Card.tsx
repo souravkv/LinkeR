@@ -6,7 +6,8 @@ import Watched from "./Watched";
 function Card() {
     interface Link {
         title: string,
-        link: string
+        link: string,
+        watched: boolean
     }
     const [linker, setlinker] = useState<Link[]>([]);
 
@@ -25,23 +26,24 @@ function Card() {
     }
 
     return (
-        <div className=" bg-black">
 
-            <div className=" p-8  md:p-20  bg-black text-black pt-5  grid grid-cols-2 md:grid-cols-5 pb-10 rounded-b-3xl shadow-lg  ">
+        <div className=" bg-opacity-10  rounded-3xl ">
+
+            <div className="   md:p-20    bg-opacity-10 text-black pt-5  grid grid-cols-2 md:grid-cols-5 pb-10 rounded-b-3xl shadow-lg  ">
                 {linker.map((link: Link) => {
                     const thumb = getthumb(link.link);
                     console.log("yes " + thumb);
 
                     return (
                         <div key={link.link}>
-                            <SingleCard title={link.title} link={link.link} thumbnail={thumb} />
+                            <SingleCard title={link.title} link={link.link} watched={link.watched} thumbnail={thumb} />
                         </div>
                     );
                 })}
             </div>
 
-            <div className=" mt-16">
-                <Watched />
+            <div className="  mt-16">
+                <Watched linker={linker} />
             </div>
 
 
