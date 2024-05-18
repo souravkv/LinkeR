@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className=' bg-black '>
+      <div className=' select-none bg-black '>
 
 
         <div className='  z-40    text-white right-0 top-0 p-5 fixed'><CiMenuBurger size={30} /></div>
