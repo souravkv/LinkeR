@@ -22,15 +22,11 @@ function App() {
           </div>
 
 
-          <div className=' bg-white text-black mt-5 grid grid-cols-2 md:grid-cols-5   pb-10  shadow-lg    
-          '>
-
+          <div >
 
             <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+
+
 
           </div>
 

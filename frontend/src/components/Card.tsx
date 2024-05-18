@@ -1,15 +1,38 @@
-
+import axios from "axios";
+import { useEffect, useState } from "react";
+import SingleCard from "./SingleCard";
 
 function Card() {
+    const [linker, setlinker] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:8787/bulk')
+            .then(response => {
+                setlinker(response.data.links);
+            });
+    }, []);
+
+    // Create thumbnail code
+    // @ts-ignore
+    function getthumb(url) {
+        const videoId = url.split('v=')[1];
+        return `https://img.youtube.com/vi/${videoId}/sddefault.jpg`;
+    }
+
     return (
-        <div onClick={() => {
-            window.open('https://www.youtube.com/watch?v=D28YLKppg5U&feature=youtu.be', "_blank")
-        }} className='     hover:brightness-50  ease-in duration-200   bg-cover   bg-opacity-50  h-[20vh]  bg-[url("https://images8.alphacoders.com/132/1325051.jpeg")]   shadow-xl m-3 rounded-xl border border-gray-100 flex justify-center text-center ' >
+        <div className="bg-white text-black mt-5 grid grid-cols-2 md:grid-cols-5 pb-10 shadow-lg">
+            {linker.map((link) => {
+                const thumb = getthumb(link.link);
+                console.log("yes " + thumb);
 
-            card 1
-
+                return (
+                    <div key={link.link}>
+                        <SingleCard title={link.title} link={link.link} thumbnail={thumb} />
+                    </div>
+                );
+            })}
         </div>
-    )
+    );
 }
 
-export default Card
+export default Card;

@@ -1,13 +1,13 @@
 
 
-function Adder({ title }: { title: string }) {
+function Adder({ title, onclick }: { title: string, onclick: () => {} }) {
     return (
         <div>
 
             <div className="mt-5 grid w-full h-full bg-gray-900 rounded-lg place-items-center">
                 <div className="w-72">
                     <div className="relative h-10 w-full min-w-[200px]">
-                        <input type="email"
+                        <input type="email" onChange={onclick}
                             className="peer h-full w-full rounded-[7px] border border-white border-t bg-transparent px-3 py-2.5 font-sans text-sm font-normal  !text-white outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                             placeholder=" " />
                         <label
