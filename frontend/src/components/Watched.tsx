@@ -1,6 +1,15 @@
 
+interface Link {
+    title: string;
+    link: string;
+    watched: boolean;
+}
 
-function Watched({ linker }: { linker: [] }) {
+interface WatchedProps {
+    linker: Link[];
+}
+
+const Watched: React.FC<WatchedProps> = ({ linker }) => {
 
 
     return (
