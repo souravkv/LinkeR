@@ -18,7 +18,7 @@ function Hero() {
 
     async function request() {
 
-        await axios.post('http://localhost:8787/links', {
+        await axios.post('https://backend.spexod.workers.dev/links', {
             title: details.title,
             link: details.link
         })

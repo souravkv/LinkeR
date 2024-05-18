@@ -10,7 +10,7 @@ function Card() {
     const [linker, setlinker] = useState<Link[]>([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8787/bulk')
+        axios.get('https://backend.spexod.workers.dev/bulk')
             .then(response => {
                 setlinker(response.data.links);
             });
