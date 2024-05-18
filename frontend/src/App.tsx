@@ -20,7 +20,7 @@ function App() {
             <Hero />
 
           </div>
-          <div className=' m-6 md:m-20 bg-opacity-10 0 backdrop-blur-xl text-white bg-zinc-900 rounded-2xl    '>
+          <div className=' m-6 md:m-20 bg-opacity-10 0 md:backdrop-blur-xl text-white bg-zinc-900 rounded-2xl    '>
             <div className=' justify-center flex p-4  font-bold  text-3xl text-gray-200'>
               LINKS
             </div>
