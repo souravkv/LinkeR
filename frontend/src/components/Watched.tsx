@@ -1,5 +1,7 @@
 
 function Watched() {
+
+
     return (
         <div className=" w-screen  px-4  bg-white ">
 
@@ -9,13 +11,12 @@ function Watched() {
 
             <div className=" grid grid-cols-2  pb-32">
                 <div className=" border-r-2">
-                    <div className=" flex justify-center pb-3"> watched</div>
+                    <div className=" text-cyan-900 flex justify-center pb-3"> watssched</div>
 
-                    <div className=" px-5 text-sm font-thin py-1">god of war</div>
-                    <div className=" px-5 text-sm font-thin py-1"> master</div>
+                    <div className=" text-cyan-900  px-5 text-sm font-thin py-1">god of war</div>
+                    <div className=" text-cyan-900  px-5 text-sm font-thin py-1"> master</div>
 
-                    <div className=" px-5 text-sm font-thin py-1">god of war</div>
-                    <div className=" px-5 text-sm font-thin py-1"> master</div>
+
 
 
                 </div>
@@ -23,7 +24,7 @@ function Watched() {
                     <div className="   flex justify-center pb-3"> To watch</div>
 
                     <div className=" px-5 text-sm   py-1">react 19</div>
-                    <div className=" px-5 text-sm  py-1"> dotnet</div>
+                    <div className=" px-5 text-sm  py-1"> ddotnet</div>
 
 
                 </div>

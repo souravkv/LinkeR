@@ -1,8 +1,8 @@
 
 import './App.css'
-import Card from './components/Card'
+import { CiMenuBurger } from "react-icons/ci"; import Card from './components/Card'
 import Hero from './components/Hero'
-import Watched from './components/Watched'
+
 
 
 function App() {
@@ -10,14 +10,15 @@ function App() {
 
   return (
     <>
-      <div className=' bg-slate-900  h-[200vh] w-screen  '>
+      <div className='  z-40  text-white right-0 top-0 p-5 fixed'><CiMenuBurger size={30} /></div>
+      <div className='  bg-cover bg-right  md:bg-left   bg-[url("https://images.unsplash.com/photo-1500408698778-2afa347782f3?q=80&w=2992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]  h-[200vh] w-screen  '>
 
         <div className=' h-screen'>
           <Hero />
 
         </div>
-        <div className=' text-black  bg-white  w-screen mb-5 '>
-          <div className=' justify-center flex p-4 font-bold  text-3xl text-cyan-700'>
+        <div className=' text-white bg-zinc-900 rounded-2xl  w-screen  '>
+          <div className=' justify-center flex p-4  font-bold  text-3xl text-gray-200'>
             LINKS
           </div>
 
@@ -33,7 +34,7 @@ function App() {
 
         </div>
 
-        <Watched />
+
       </div>
     </>
   )
