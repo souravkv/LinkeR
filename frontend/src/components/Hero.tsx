@@ -5,6 +5,8 @@ import axios from "axios"
 
 function Hero() {
 
+
+
     const [details, setdetails] = useState({
         title: "",
         link: ""

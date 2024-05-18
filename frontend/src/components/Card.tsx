@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import SingleCard from "./SingleCard";
 
 function Card() {
-    const [linker, setlinker] = useState([]);
+    interface Link {
+        title: string,
+        link: string
+    }
+    const [linker, setlinker] = useState<Link[]>([]);
 
     useEffect(() => {
         axios.get('http://localhost:8787/bulk')
@@ -21,7 +25,7 @@ function Card() {
 
     return (
         <div className="bg-white text-black mt-5 grid grid-cols-2 md:grid-cols-5 pb-10 shadow-lg">
-            {linker.map((link) => {
+            {linker.map((link: Link) => {
                 const thumb = getthumb(link.link);
                 console.log("yes " + thumb);
 

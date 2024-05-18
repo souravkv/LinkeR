@@ -1,6 +1,11 @@
 
+interface AdderProps {
+    title: string;
+    onclick: (e: React.ChangeEvent<HTMLInputElement>) => void; // Correct type for the onclick prop
+}
 
-function Adder({ title, onclick }: { title: string, onclick: () => {} }) {
+
+const Adder: React.FC<AdderProps> = ({ title, onclick }) => {
     return (
         <div>
 
