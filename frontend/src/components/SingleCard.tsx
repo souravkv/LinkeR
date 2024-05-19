@@ -25,7 +25,7 @@ function SingleCard({ title, link, thumbnail, watched }: { title: string, link: 
 
             <div
 
-                className="  brightness-75   font-thin text-xl text-white   md:hover:text-2xl hover:brightness-100 md:ease-in duration-200 bg-cover bg-opacity-50 h-[20vh] shadow-xl m-5 rounded-xl flex justify-start  items-end text-center"
+                className="  brightness-75   font-thin text-xl text-white   md:hover:text-2xl hover:brightness-100 md:ease-in duration-200 bg-cover bg-opacity-50 h-[10vh] md:h-[15vh] shadow-xl m-3 rounded-xl flex justify-start  items-end text-center"
                 style={{
                     backgroundImage: `url(${thumbnail})`, // Adjust the brightness of the background image
                 }}
