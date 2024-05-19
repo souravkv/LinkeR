@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className=' select-none bg-black w-screen  '>
-        <div className=' animate-bounce  duration-75  z-40    text-white left-[40%]  md:hidden bottom-0 px-5 py-3  absolute'><TbArrowBigDownLines color='cyan' size={30} opacity={.4} /></div>
+        <div className=' animate-bounce   z-40    text-white left-[40%]  md:hidden bottom-0 px-5 py-3  absolute'><TbArrowBigDownLines color='cyan' size={30} opacity={.4} /></div>
 
 
 
@@ -29,8 +29,8 @@ function App() {
 
           </div>
           <div className='  md:ease-out duration-500  md:hover:-translate-y-12   m-6 md:m-20 bg-opacity-10 0 md:backdrop-blur-xl text-white bg-zinc-900 rounded-2xl    '>
-            <div className='  duration-1000  hover:opacity-35     border-b   border-gray-800 font-Bangers text-6xl justify-center flex p-8 font-bold   text-gray-300'>
-              LINKS
+            <div className='  text-cyan-700 duration-1000  hover:opacity-35     border-b   border-gray-800 font-Bangers text-7xl justify-center flex p-8 font-bold   '>
+              Your Watch List
             </div>
 
 
