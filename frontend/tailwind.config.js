@@ -30,7 +30,9 @@ export default {
 
     fontFamily: {
       Bangers: ["Bangers", "system-ui"],
-      pacifico: ["Pacifico", "cursive"]
+      pacifico: ["Pacifico", "cursive"],
+      Bebas : ["Bebas Neue", " sans-serif"],
+
 
      }
   },

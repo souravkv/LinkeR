@@ -3,6 +3,7 @@ import './App.css'
 import { CiMenuBurger } from "react-icons/ci"; import Card from './components/Card'
 import Hero from './components/Hero'
 import { TbArrowBigDownLines } from "react-icons/tb";
+import Footer from './components/Footer';
 
 
 
@@ -48,7 +49,9 @@ function App() {
 
         </div>
       </div>
-      <div className=' bg-black h-screen'></div>
+      <div className=' bg-black h-screen'>
+        <Footer />
+      </div>
     </>
   )
 }
