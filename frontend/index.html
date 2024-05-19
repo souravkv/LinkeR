@@ -6,9 +6,16 @@
   <link rel="icon" type="image/svg+xml" href="/vite.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite + React + TS</title>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+
 </head>
 
 <body>
+  <script>
+    (function () {
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  </script>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
