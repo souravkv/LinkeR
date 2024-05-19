@@ -21,10 +21,19 @@ function Card() {
     // Create thumbnail code
     // @ts-ignore
     function getthumb(url) {
-        const videoId = url.split('v=')[1]?.split('&')[0];
+        let videoId;
+
+        // Check if the URL is a shortened youtu.be URL
+        if (url.includes('youtu.be')) {
+            videoId = url.split('youtu.be/')[1]?.split('&')[0];
+        } else {
+            // Otherwise, it's a standard YouTube URL
+            videoId = url.split('v=')[1]?.split('&')[0];
+        }
+
+
         return `https://img.youtube.com/vi/${videoId}/sddefault.jpg`;
     }
-
     return (
 
         <div className=" bg-opacity-10  rounded-3xl ">

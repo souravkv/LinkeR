@@ -44,6 +44,7 @@ function App() {
 
         </div>
       </div>
+      <div className=' bg-black h-screen'></div>
     </>
   )
 }
