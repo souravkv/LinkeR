@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className=' select-none bg-black '>
+      <div className=' select-none bg-black  '>
 
 
         <div className='  z-40    text-white right-0 top-0 p-5 fixed'><CiMenuBurger size={30} /></div>
@@ -24,8 +24,8 @@ function App() {
             <Hero />
 
           </div>
-          <div className=' m-6 md:m-20 bg-opacity-10 0 md:backdrop-blur-xl text-white bg-zinc-900 rounded-2xl    '>
-            <div className='  border-b   border-gray-800 font-Bangers text-6xl justify-center flex p-8 font-bold   text-gray-300'>
+          <div className='  md:ease-out duration-500  hover:-translate-y-12   m-6 md:m-20 bg-opacity-10 0 md:backdrop-blur-xl text-white bg-zinc-900 rounded-2xl    '>
+            <div className='  duration-1000  hover:opacity-35     border-b   border-gray-800 font-Bangers text-6xl justify-center flex p-8 font-bold   text-gray-300'>
               LINKS
             </div>
 

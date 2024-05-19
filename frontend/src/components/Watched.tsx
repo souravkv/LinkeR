@@ -22,7 +22,7 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
 
 
 
-                <div className="   border-b   border-gray-800  flex justify-center    mt-4 pb-8 font-thin  text-4xl  text-cyan-400">Watched List </div>
+                <div className=" md:ease-out duration-500  hover:text-cyan-100  border-b   border-gray-800  flex justify-center    mt-4 pb-8 font-thin  text-4xl  text-cyan-400">Watched List </div>
 
                 <div className=" grid grid-cols-2  pb-32">
                     <div className=" border-r border-gray-800  text-cyan-600 font-thin px-5 text-sm   ">
@@ -33,7 +33,7 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
 
                         {linker.map((link: { watched: Boolean, title: string }) => {
                             if (link.watched)
-                                return (<div className="  text-xs  py-1" > {link.title}</div>)
+                                return (<div className=" md:ease-out duration-500  hover:text-lg   text-xs  py-1" > {link.title}</div>)
                         })}
 
 
@@ -48,7 +48,7 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
 
                         {linker.map((link: { watched: Boolean, title: string }) => {
                             if (!link.watched)
-                                return (<div className=" text-cyan-200  px-6 text-xs  py-1" > {link.title}</div>)
+                                return (<div className="  md:ease-out duration-500  hover:text-lg  text-cyan-200  px-6 text-xs  py-1" > {link.title}</div>)
                         })}
 
 

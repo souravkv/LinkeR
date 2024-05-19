@@ -20,12 +20,12 @@ function SingleCard({ title, link, thumbnail, watched }: { title: string, link: 
 
 
     return (
-        <div className="  h-[12vh]">
+        <div className=" md:ease-out duration-500  hover:-translate-y-12    h-[15vh]">
 
 
             <div
 
-                className="   relative brightness-75   font-thin text-xl text-white   md:hover:text-2xl hover:brightness-100 md:ease-in duration-200 bg-cover bg-opacity-50 h-[10vh] md:h-[15vh] shadow-xl m-3 rounded-xl flex justify-start  items-end text-center"
+                className="  relative brightness-75   font-thin text-xl text-white   md:hover:text-2xl hover:brightness-100  bg-cover bg-opacity-50 h-[13vh] md:h-[15vh] shadow-xl m-3 rounded-xl flex justify-start  items-end text-center"
                 style={{
                     backgroundImage: `url(${thumbnail})`, // Adjust the brightness of the background image
                 }}
