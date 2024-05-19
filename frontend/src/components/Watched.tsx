@@ -18,7 +18,7 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
         <div>
 
 
-            <div className=" w-full pt-4 pb-52 bg-black rounded-t-3xl ">
+            <div className=" w-full pt-4 pb-32 md:pb-44 bg-black rounded-t-3xl ">
 
 
 
