@@ -30,7 +30,7 @@ function Hero() {
         <div className=' h-[60%] flex flex-col justify-between items-center mb-20 '>
 
             <div>
-                <div className=' font-pacifico hover:text-cyan-500 md:ease-out   duration-500   hover:-translate-y-5    text-7xl text-cyan-600   text-  md: mb-20 md:text-[30vh] mt-44 '>LinkeR</div>
+                <div className=' animate-pulse font-pacifico hover:text-cyan-500 md:ease-out   duration-1000   hover:-translate-y-5    text-7xl text-cyan-600   text-  md: mb-20 md:text-[30vh] mt-44 '>LinkeR</div>
             </div>
 
 
