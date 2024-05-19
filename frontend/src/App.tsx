@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className=' select-none bg-black w-screen  '>
-        <div className=' animate-bounce   z-40    text-white left-[40%]  md:hidden bottom-0 px-5 py-3  absolute'><TbArrowBigDownLines color='cyan' size={30} opacity={.4} /></div>
+        <div className=' animate-bounce  duration-75  z-40    text-white left-[40%]  md:hidden bottom-0 px-5 py-3  absolute'><TbArrowBigDownLines color='cyan' size={30} opacity={.4} /></div>
 
 
 

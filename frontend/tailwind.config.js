@@ -5,7 +5,28 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
+
+    extend: {
+      keyframes: {
+        looseBulb: {
+          '0%, 100%': { opacity: '1' },
+          '10%': { opacity: '1  ' },
+          '20%': { opacity: '0.7' },
+          '30%': { opacity: '0.7' },
+          '40%': { opacity: '1' },
+          '50%': { opacity: '0.7' },
+          '60%': { opacity: '0.9' },
+          '70%': { opacity: '1'},
+          '80%': { opacity: '1' },
+          '90%': { opacity: '0.9  ' },
+        },
+      },
+      animation: {
+        looseBulb: 'looseBulb 5s infinite',
+      },
+    },
 
     fontFamily: {
       Bangers: ["Bangers", "system-ui"],

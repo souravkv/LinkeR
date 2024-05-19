@@ -29,8 +29,10 @@ function Hero() {
     return (
         <div className=' h-[60%] flex flex-col justify-between items-center mb-20 '>
 
-            <div>
-                <div className=' animate-pulse font-pacifico hover:text-cyan-500 md:ease-out   duration-1000   hover:-translate-y-5    text-7xl text-cyan-600   text-  md: mb-20 md:text-[30vh] mt-44 '>LinkeR</div>
+            <div className="group  ">
+                <div className='   animate-looseBulb font-pacifico hover:text-cyan-500 md:ease-out  duration-1000     hover:-translate-y-5    text-7xl text-cyan-600   text-  md: mb-20 md:text-[30vh] mt-44 '>LinkeR</div>
+
+                <div className="    md:m-9 p-34 hover:hidden  hidden md:block group-hover:bg-black  group-hover:opacity-50 duration-[2s]   ease-out  opacity-0  md:-p-20 absolute  bottom-0 left-0 text-white"> Hey there! Meet LinkeR, your new best friend for keeping tabs on YouTube videos. Just drop the URL and add a title, and boom! You’ve got a watchlist ready to go whenever you are. No more lost links or forgotten vids – LinkeR’s got your back.</div>
             </div>
 
 
