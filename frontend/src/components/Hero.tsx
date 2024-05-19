@@ -30,16 +30,16 @@ function Hero() {
         <div className=' h-[60%] flex flex-col justify-between items-center mb-20 '>
 
             <div>
-                <div className='text-white text-[10vh] mt-32 '>LinkeR</div>
+                <div className=' font-pacifico  text-8xl text-cyan-600   text-  md: mb-20 md:text-[30vh] mt-44 '>LinkeR</div>
             </div>
 
 
-            <div>
+            <div className="     ">
 
                 <Adder onclick={(e) => { setdetails({ ...details, title: e.target.value }) }} title="Title " />
                 <Adder onclick={(e) => { setdetails({ ...details, link: e.target.value }) }} title="Link " />
                 <div className=' w-full flex justify-center'>
-                    <button onClick={request} type="submit" className=" mt-5 text-white bg-black border border-gray-700 hover:bg-gray-800  focus:ring-gray font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+                    <button onClick={request} type="submit" className=" font-Bangers   text-gray-400 tracking-widest mt-5  bg-black border border-gray-700 hover:bg-gray-800  focus:ring-gray font-medium rounded-lg text-sm w-1/2 sm:w-auto px-5 py-2.5 text-center ">Submit</button>
 
                 </div>
 

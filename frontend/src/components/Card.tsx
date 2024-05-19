@@ -29,7 +29,7 @@ function Card() {
 
         <div className=" bg-opacity-10  rounded-3xl ">
 
-            <div className="   md:p-20    bg-opacity-10 text-black pt-5  grid grid-cols-2 md:grid-cols-5 pb-10 rounded-b-3xl shadow-lg  ">
+            <div className="   md:p-10    bg-opacity-10 text-black pt-5  grid grid-cols-2 md:grid-cols-5 pb-10 rounded-b-3xl shadow-lg  ">
                 {linker.map((link: Link) => {
                     const thumb = getthumb(link.link);
                     console.log("yes " + thumb);
