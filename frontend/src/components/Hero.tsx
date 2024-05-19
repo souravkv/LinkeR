@@ -30,7 +30,7 @@ function Hero() {
         <div className=' h-[60%] flex flex-col justify-between items-center mb-20 '>
 
             <div>
-                <div className=' font-pacifico  text-8xl text-cyan-600   text-  md: mb-20 md:text-[30vh] mt-44 '>LinkeR</div>
+                <div className=' font-pacifico  text-7xl text-cyan-600   text-  md: mb-20 md:text-[30vh] mt-44 '>LinkeR</div>
             </div>
 
 
