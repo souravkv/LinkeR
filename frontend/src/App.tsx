@@ -35,13 +35,13 @@ function App() {
             </div>
 
 
-            <div className=' ' >
-
-              <Card />
 
 
+            <Card />
 
-            </div>
+
+
+
 
 
           </div>
@@ -49,7 +49,8 @@ function App() {
 
         </div>
       </div>
-      <div className=' bg-black h-screen'>
+
+      <div className=' pt-64 bg-black h-[120vh'>
         <Footer />
       </div>
     </>

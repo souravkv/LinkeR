@@ -20,20 +20,24 @@ function Card() {
 
     // Create thumbnail code
     // @ts-ignore
+
     function getthumb(url) {
         let videoId;
 
         // Check if the URL is a shortened youtu.be URL
         if (url.includes('youtu.be')) {
             videoId = url.split('youtu.be/')[1]?.split('&')[0];
+        } else if (url.includes('youtube.com/shorts/')) {
+            // Check if the URL is a YouTube Shorts URL
+            videoId = url.split('youtube.com/shorts/')[1]?.split('?')[0];
         } else {
             // Otherwise, it's a standard YouTube URL
             videoId = url.split('v=')[1]?.split('&')[0];
         }
 
-
         return `https://img.youtube.com/vi/${videoId}/sddefault.jpg`;
     }
+
     return (
 
         <div className=" bg-opacity-10  rounded-3xl ">
@@ -51,7 +55,7 @@ function Card() {
                 })}
             </div>
 
-            <div className="  mt-16">
+            <div className="  ">
                 <Watched linker={linker} />
             </div>
 

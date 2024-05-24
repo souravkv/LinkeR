@@ -18,7 +18,7 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
         <div>
 
 
-            <div className=" w-full pt-4 pb-32 md:pb-44 bg-black rounded-t-3xl ">
+            <div className=" w-full h-[57svh] pt-4 pb-32 md:pb-0  bg-black rounded-3xl ">
 
 
 
@@ -26,32 +26,36 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
 
                 <div className=" grid grid-cols-2  pb-32">
                     <div className=" border-r border-gray-800  text-cyan-600 font-thin px-5 text-sm   ">
-                        <div className=" text-cyan-600 flex justify-center text-lg p-8 pb-3"> <div className=" text-cyan-400 ">watched </div></div>
+                        <div className=" text-cyan-600 flex justify-center text-lg  pt-5"> <div className=" text-cyan-400 ">watched </div></div>
+
+                        <div className=" overflow-scroll h-[40vh]">
+
+
+
+                            {linker.map((link: { watched: Boolean, title: string }) => {
+                                if (link.watched)
+                                    return (<div className=" md:ease-out duration-500  hover:text-lg   text-xs  py-1" > {link.title}</div>)
+                            })}
 
 
 
 
-                        {linker.map((link: { watched: Boolean, title: string }) => {
-                            if (link.watched)
-                                return (<div className=" md:ease-out duration-500  hover:text-lg   text-xs  py-1" > {link.title}</div>)
-                        })}
 
-
-
-
-
+                        </div>
 
                     </div>
-                    <div className="font-thin ">
-                        <div className="  text-cyan-200  text-lg p-8    flex justify-center pb-3"> To watch</div>
+                    <div className="font-thin  ">
+                        <div className="  text-cyan-200  text-lg p-5    flex justify-center pb-3"> To watch</div>
+
+                        <div className="  overflow-auto h-[30vh]">
+
+                            {linker.map((link: { watched: Boolean, title: string }) => {
+                                if (!link.watched)
+                                    return (<div className="  md:ease-out duration-500  hover:text-lg  text-cyan-200  px-6 text-xs  py-1" > {link.title}</div>)
+                            })}
 
 
-                        {linker.map((link: { watched: Boolean, title: string }) => {
-                            if (!link.watched)
-                                return (<div className="  md:ease-out duration-500  hover:text-lg  text-cyan-200  px-6 text-xs  py-1" > {link.title}</div>)
-                        })}
-
-
+                        </div>
 
                     </div>
 
