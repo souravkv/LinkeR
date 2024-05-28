@@ -2,7 +2,7 @@ import { IoCloseOutline } from "react-icons/io5";
 
 function MacCard({image,a,b,tag}:{image:any,a:string,b:string,tag:string}) {
   return (
-    <div className={` ${a} ${b}   absolute  group  hover:scale-105   duration-300 select-none`}>
+    <div className={` ${a} ${b}   absolute  group  hover:scale-105   duration-300 select-none hover:cursor-pointer  `}>
 
     <img  className='  md:h-[24vh] opacity-95 brightness-90 duration-300 hover:brightness-100 shadow-2xl drop-shadow-2xl     rounded-3xl ' src={image} />
     <div className='  '>
