@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { FaApple } from "react-icons/fa";
 import { IoIosWifi } from "react-icons/io";
 
