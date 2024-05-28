@@ -4,6 +4,7 @@ import { CiMenuBurger } from "react-icons/ci"; import Card from './components/Ca
 import Hero from './components/Hero'
 import { TbArrowBigDownLines } from "react-icons/tb";
 import Footer from './components/Footer';
+import MacOs from './components/MacOS';
 
 
 
@@ -34,15 +35,7 @@ function App() {
               Your Watch List
             </div>
 
-
-
-
             <Card />
-
-
-
-
-
 
           </div>
 
@@ -52,6 +45,13 @@ function App() {
 
       <div className=' pt-64 bg-black h-[120vh'>
         <Footer />
+      </div>
+
+      <div>
+        <MacOs />
+      </div>
+      <div className=' h-20 bg-black'> 
+
       </div>
     </>
   )
