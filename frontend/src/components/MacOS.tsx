@@ -61,7 +61,7 @@ export default function MacOs(){
            </div>
            
             </div>
-            <div id='left-right-arrow'  className='  cursor-pointer    flex justify-between px-52 -translate-y-[440%]'>
+            <div id='left-right-arrow'  className=' hidden md:flex cursor-pointer    justify-between px-52 -translate-y-[440%]'>
                 <div onClick={left} className=' p-4 bg-opacity-0 hover:bg-opacity-30 hover:translate-x-5 ease-out duration-500 bg-black rounded-full'>
                     <FaAngleLeft color='orange' size={50}  />                
                 </div>
