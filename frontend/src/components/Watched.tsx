@@ -18,7 +18,7 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
         <div>
 
 
-            <div className=" w-full h-[57svh] pt-4 pb-32 md:pb-0  bg-black rounded-3xl ">
+            <div className="  w-full h-[57svh] pt-4 pb-32 md:pb-0  bg-black rounded-3xl ">
 
 
 
@@ -28,7 +28,7 @@ const Watched: React.FC<WatchedProps> = ({ linker }) => {
                     <div className=" border-r border-gray-800  text-cyan-600 font-thin px-5 text-sm   ">
                         <div className=" text-cyan-600 flex justify-center text-lg  pt-5"> <div className=" text-cyan-400 ">watched </div></div>
 
-                        <div className=" overflow-scroll h-[40vh]">
+                        <div className=" scrollbar-hide  overflow-scroll h-[40vh]">
 
 
 

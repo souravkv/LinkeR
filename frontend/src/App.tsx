@@ -71,9 +71,10 @@ function App() {
       <div ref={macref}>
         <MacOs />
       </div>
-      <div className=' h-20 bg-black'> 
+      <div className=' h-[50vh] bg-black'> 
 
       </div>
+     
     </>
   )
 }

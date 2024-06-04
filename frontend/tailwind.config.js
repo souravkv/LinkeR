@@ -45,5 +45,6 @@ export default {
       },
       { values: theme('textShadow') }
     )
-  })],
+  }),    require('tailwind-scrollbar-hide')],
+
 }
