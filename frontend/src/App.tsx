@@ -8,6 +8,7 @@ import MacOs from './components/MacOS';
 import { useRef } from 'react';
 import { FaApple } from "react-icons/fa";
 import  song1 from '../public/song1.mp3';
+import Card from './components/Card';
 
 
 
@@ -60,7 +61,7 @@ function App() {
               Your Watch List
             </div>
 
-            <Card />
+            <Card/>
 
           </div>
 
