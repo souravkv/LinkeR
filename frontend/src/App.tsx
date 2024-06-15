@@ -1,5 +1,6 @@
 
 import './App.css'
+import { PiMusicNoteFill } from "react-icons/pi";
 import { CiMenuBurger } from "react-icons/ci"; import Card from './components/Card'
 import Hero from './components/Hero'
 import { TbArrowBigDownLines } from "react-icons/tb";
@@ -7,6 +8,7 @@ import Footer from './components/Footer';
 import MacOs from './components/MacOS';
 import { useRef } from 'react';
 import { FaApple } from "react-icons/fa";
+import  song1 from '../public/song1.mp3';
 
 
 
@@ -30,11 +32,14 @@ function App() {
     <>
       <div className=' select-none bg-black w-screen  '>
         <div id='navbar' className=' absolute top-0 bg-opacity-95 w-full  flex p-4 text-white  text-md  font-thin justify-between px-8'>
-          <div  onClick={()=>{scrollto(macref)}} className=' hover:brightness-50 hover:cursor-pointer'>
-            <FaApple color='white' size={26} opacity="80%"/>
+          <div  className='flex  hover:brightness-50 hover:cursor-pointer'>
+            <FaApple  onClick={()=>{scrollto(macref)}}  color='white' size={26} opacity="80%"/>
+           
           </div>
           <div className=' flex hover:cursor-pointer'>
-              <div onClick={()=>{scrollto(wlistref)}} className='  hover:brightness-50 px-3 border-r border-gray-700'>watch list</div>
+              <div onClick={()=>{scrollto(wlistref)
+               
+              }} className='  hover:brightness-50 px-3 border-r border-gray-700'>watch list</div>
               <div onClick={()=>{scrollto(creditsref)}}  className='  hover:brightness-50 px-3 border-r border-gray-700'>credits</div>
           </div>
         </div>
@@ -42,7 +47,7 @@ function App() {
 
 
 
-        <div  className='  z-40    text-white right-0 bottom-0 p-3 fixed'><CiMenuBurger size={20} /></div>
+        <div  className='  z-40    text-white right-0 bottom-0 p-5 fixed'> <PiMusicNoteFill size={25} onClick={()=>{ new Audio(song1).play(); }}/></div>
 
 
         <div className='  bg-cover bg- bg-right  md:bg-left bg-black   bg-[url("https://images.unsplash.com/photo-1500408698778-2afa347782f3?q=80&w=2992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")] h-[330vh]  md:h-[300vh] w-screen  '>
