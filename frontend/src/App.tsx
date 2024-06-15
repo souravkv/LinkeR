@@ -1,7 +1,6 @@
 
 import './App.css'
 import { PiMusicNoteFill } from "react-icons/pi";
-import { CiMenuBurger } from "react-icons/ci"; import Card from './components/Card'
 import Hero from './components/Hero'
 import { TbArrowBigDownLines } from "react-icons/tb";
 import Footer from './components/Footer';
